@@ -51,4 +51,5 @@
             android:background="@color/bg_color"/>
     </LinearLayout>
 
-</LinearLayout>
+        </LinearLayout>
+

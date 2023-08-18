@@ -1,15 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.ContactsApp" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Primary brand color. Lighter shade: 80% opacity -->
-        <item name="colorPrimary">#CC138BEA</item>
-        <item name="colorPrimaryVariant">#80024478</item>
+    <style name="Theme.Contacts" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#138BEA</item>
+        <item name="colorPrimaryVariant">#024478</item>
         <item name="colorOnPrimary">@color/black</item>
-        <!-- Secondary brand color. Lighter shade: 80% opacity -->
-        <item name="colorSecondary">#CC138BEA</item>
-        <item name="colorSecondaryVariant">#80024478</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#138BEA</item>
+        <item name="colorSecondaryVariant">#024478</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. Use the primary variant color with 80% opacity. -->
+        <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
