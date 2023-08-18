@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.contacts.databinding.ActivityMainBinding
 
@@ -43,7 +44,16 @@ class MainActivity : AppCompatActivity(),OnItemClickListener {
                 binding.contactsList.adapter = contactsAdapter
             }
 
-
+        val themeSwitch = binding.themeSwitch
+        themeSwitch.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                // Switch to dark theme
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            } else {
+                // Switch to light theme
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            }
+        }
 
 
         binding.addContacts.setOnClickListener {
